@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 103</title>
+</head>
+
+<body>
+    <center>
+        <h1>ASALAM ALAYKUM</h1>
+    </center>
+
+    <button id="bot">Change Text</button>
+    <button ID="bot2">BG to green</button>
+
+    <div class="box-1">
+        <button id="bot3">Blue</button>
+    </div>
+
+    <div class="box-2">
+        <button id="bot4">Indigo</button>
+    </div>
+
+    <div class="box-3">
+        <button id="bot5">Red</button>
+    </div>
+
+    <div class="box-4">
+        <button id="bot6">Previous text</button>
+    </div>
+
+    <div class="box-5">
+        <button id="bot7">BG to pink</button>
+    </div>
+
+    <script>
+        document.querySelector('#bot').addEventListener('click', () => {
+            document.querySelector('h1').innerText = "WA ALAYKUM SALAM"
+        })
+        document.querySelector('#bot2').addEventListener('click', () => {
+            document.querySelector('body').style = "background-color:green; "
+        })
+        document.querySelector('#bot3').addEventListener('click', () => {
+            document.querySelector('h1').style = "color: blue;"
+        })
+        document.querySelector('#bot4').addEventListener('click', () => {
+            document.querySelector('h1').style = "color: indigo;"
+        })
+        document.querySelector('#bot5').addEventListener('click', () => {
+            document.querySelector('h1').style = "color: red;"
+        })
+        document.querySelector('#bot6').addEventListener('click', () => {
+            document.querySelector('h1').innerText = "ASALAM ALAYKUM"
+        })
+        document.querySelector('#bot7').addEventListener('click', () => {
+            document.querySelector('body').style = "background-color: pink;"
+        })
+
+    </script>
+    <style>
+        .box-1 {
+            margin: 10px 1px;
+        }
+
+        .box-2 {
+            margin: 10px 1px;
+        }
+
+        .box-3 {
+            margin: 10px 1px;
+        }
+
+        .box-4 {
+            margin: 10px 1px;
+        }
+        .box-5{
+            margin: 10px 1px;
+        }
+    </style>
+</body>
+
+</html>
